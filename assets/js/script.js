@@ -325,7 +325,7 @@ async function readText(button) {
 
   try {
     const response = await fetch(
-      "https://texttospeech.googleapis.com/v1/text:synthesize?key=AIzaSyCEW5pL4CQ3bww1KuR7wPTLxw31iIC9TSY",
+      "https://texttospeech.googleapis.com/v1/text:synthesize?key=#",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -348,4 +348,5 @@ async function readText(button) {
     console.error("Error during TTS fetch:", error);
   }
 }
+
 
